@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vera Landscaping - Transform Your Outdoor Space</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <i class="fas fa-leaf text-success me-2 fs-3"></i>
+        <span class="fw-bold text-success fs-3">Vera</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-4">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn-success">Get Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <h1 class="hero-title">Beautiful Garden Design</h1>
+              <p class="hero-subtitle">Transform your outdoor space into a natural paradise</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <h1 class="hero-title">Professional Landscaping</h1>
+              <p class="hero-subtitle">Expert maintenance and design services</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <h1 class="hero-title">Sustainable Solutions</h1>
+              <p class="hero-subtitle">Eco-friendly landscaping for a greener tomorrow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-buttons">
+        <a href="#services" class="btn btn-success btn-lg me-3">Our Services</a>
+        <a href="#contact" class="btn btn-outline-light btn-lg">Get Quote</a>
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="display-5 fw-bold text-dark mb-4">Creating Beautiful Landscapes Since 2010</h2>
+          <p class="lead text-muted mb-4">
+            At Vera Landscaping, we believe that every outdoor space has the potential 
+            to become a natural masterpiece. Our team of experienced professionals 
+            combines creativity with expertise to transform your vision into reality.
+          </p>
+          <p class="text-muted mb-4">
+            From residential gardens to commercial properties, we provide comprehensive 
+            landscaping services that enhance the beauty and value of your property 
+            while respecting the environment.
+          </p>
+          <a href="#about" class="btn btn-success btn-lg">
+            Learn More About Us <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Beautiful landscape design" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-dark mb-3">Our Services</h2>
+        <p class="lead text-muted">We offer a comprehensive range of landscaping services to meet all your outdoor needs</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card card h-100 text-center border-0 shadow">
+            <div class="card-body p-4">
+              <div class="service-icon mb-3">
+                <i class="fas fa-cut text-success"></i>
+              </div>
+              <h5 class="card-title">Lawn Care</h5>
+              <p class="card-text text-muted">Professional lawn maintenance and care services</p>
+              <ul class="list-unstyled text-start">
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Regular mowing</li>
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Fertilization</li>
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Weed control</li>
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Seasonal cleanup</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card card h-100 text-center border-0 shadow">
+            <div class="card-body p-4">
+              <div class="service-icon mb-3">
+                <i class="fas fa-tree text-success"></i>
+              </div>
+              <h5 class="card-title">Tree Services</h5>
+              <p class="card-text text-muted">Expert tree care and maintenance</p>
+              <ul class="list-unstyled text-start">
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Tree trimming</li>
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Tree removal</li>
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Stump grinding</li>
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Disease treatment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card card h-100 text-center border-0 shadow">
+            <div class="card-body p-4">
+              <div class="service-icon mb-3">
+                <i class="fas fa-seedling text-success"></i>
+              </div>
+              <h5 class="card-title">Garden Design</h5>
+              <p class="card-text text-muted">Custom garden design and installation</p>
+              <ul class="list-unstyled text-start">
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Plant selection</li>
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Garden planning</li>
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Soil preparation</li>
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Seasonal planting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card card h-100 text-center border-0 shadow">
+            <div class="card-body p-4">
+              <div class="service-icon mb-3">
+                <i class="fas fa-tint text-success"></i>
+              </div>
+              <h5 class="card-title">Irrigation</h5>
+              <p class="card-text text-muted">Efficient watering systems for your landscape</p>
+              <ul class="list-unstyled text-start">
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Sprinkler installation</li>
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Drip irrigation</li>
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>System maintenance</li>
+                <li><i class="fas fa-circle text-success me-2" style="font-size: 0.5rem;"></i>Water conservation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-5">
+        <button class="btn btn-success btn-lg" onclick="showAllServices()">
+          View All Services <i class="fas fa-arrow-right ms-2"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-dark mb-3">What Our Clients Say</h2>
+        <p class="lead text-muted">Don't just take our word for it - hear from our satisfied customers</p>
+      </div>
+      
+      <div class="row g-4" id="testimonials-container">
+        <!-- Testimonials will be loaded here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-4 fw-bold text-dark mb-3">About Vera Landscaping</h2>
+        <p class="lead text-muted">Transforming outdoor spaces with passion, expertise, and a deep respect for nature</p>
+      </div>
+      
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+          <h3 class="h2 fw-bold text-dark mb-4">Our Story</h3>
+          <p class="text-muted mb-4">
+            Founded in 2010 by Maria Vera, our company began with a simple vision: to create 
+            beautiful, sustainable outdoor spaces that bring people closer to nature. What started 
+            as a small family business has grown into one of the region's most trusted landscaping companies.
+          </p>
+          <p class="text-muted mb-4">
+            Maria's background in environmental science and her passion for horticulture laid the 
+            foundation for our commitment to sustainable practices. Today, our team of certified 
+            landscapers, designers, and arborists continues to uphold these values while delivering 
+            exceptional results for our clients.
+          </p>
+          <p class="text-muted">
+            Every project we undertake is an opportunity to create something beautiful, functional, 
+            and environmentally responsible. We believe that great landscaping should enhance both 
+            the property and the surrounding ecosystem.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Our team at work" class="img-fluid rounded shadow">
+        </div>
+      </div>
+      
+      <!-- Stats -->
+      <div class="row text-center py-5 bg-success text-white rounded">
+        <div class="col-6 col-md-3">
+          <div class="h2 fw-bold">500+</div>
+          <div>Projects Completed</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="h2 fw-bold">14</div>
+          <div>Years Experience</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="h2 fw-bold">50+</div>
+          <div>Happy Clients</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="h2 fw-bold">100%</div>
+          <div>Satisfaction Rate</div>
+        </div>
+      </div>
+      
+      <!-- Values -->
+      <div class="row g-4 mt-5">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+            <i class="fas fa-leaf text-success fs-2"></i>
+          </div>
+          <h5 class="fw-bold">Sustainability</h5>
+          <p class="text-muted">We prioritize eco-friendly practices and native plant selections to create sustainable landscapes.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+            <i class="fas fa-heart text-success fs-2"></i>
+          </div>
+          <h5 class="fw-bold">Passion</h5>
+          <p class="text-muted">Our love for nature and design drives us to create outdoor spaces that inspire and delight.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+            <i class="fas fa-award text-success fs-2"></i>
+          </div>
+          <h5 class="fw-bold">Quality</h5>
+          <p class="text-muted">We maintain the highest standards in every project, ensuring lasting beauty and functionality.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+            <i class="fas fa-users text-success fs-2"></i>
+          </div>
+          <h5 class="fw-bold">Community</h5>
+          <p class="text-muted">We're committed to serving our local community and building lasting relationships with our clients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-4 fw-bold text-dark mb-3">Contact Us</h2>
+        <p class="lead text-muted">Ready to transform your outdoor space? Get in touch with us for a free consultation</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="h4 fw-bold mb-4">Get In Touch</h3>
+          
+          <div class="d-flex mb-4">
+            <i class="fas fa-phone text-success me-3 mt-1"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Phone</h6>
+              <p class="mb-1">(555) 123-4567</p>
+              <small class="text-muted">Mon-Fri 8AM-6PM, Sat 9AM-4PM</small>
+            </div>
+          </div>
+          
+          <div class="d-flex mb-4">
+            <i class="fas fa-envelope text-success me-3 mt-1"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Email</h6>
+              <p class="mb-1">info@veralandscaping.com</p>
+              <small class="text-muted">We respond within 24 hours</small>
+            </div>
+          </div>
+          
+          <div class="d-flex mb-4">
+            <i class="fas fa-map-marker-alt text-success me-3 mt-1"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Address</h6>
+              <p class="mb-0">123 Garden Street<br>Green Valley, CA 90210</p>
+            </div>
+          </div>
+          
+          <div class="d-flex mb-4">
+            <i class="fas fa-clock text-success me-3 mt-1"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Business Hours</h6>
+              <p class="mb-1">Monday - Friday: 8:00 AM - 6:00 PM</p>
+              <p class="mb-1">Saturday: 9:00 AM - 4:00 PM</p>
+              <p class="mb-0">Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="bg-white rounded p-4 shadow">
+            <h3 class="h4 fw-bold mb-4">Request a Quote</h3>
+            <form id="contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+              </div>
+              
+              <div class="mb-3">
+                <label for="service" class="form-label">Service Interested In *</label>
+                <select class="form-select" id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option value="lawn-care">Lawn Care & Maintenance</option>
+                  <option value="tree-services">Tree & Shrub Services</option>
+                  <option value="garden-design">Garden Design & Installation</option>
+                  <option value="irrigation">Irrigation Systems</option>
+                  <option value="hardscaping">Hardscaping</option>
+                  <option value="seasonal">Seasonal Services</option>
+                  <option value="commercial">Commercial Landscaping</option>
+                  <option value="restoration">Landscape Restoration</option>
+                  <option value="consultation">General Consultation</option>
+                </select>
+              </div>
+              
+              <div class="mb-3">
+                <label for="message" class="form-label">Project Details *</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required 
+                          placeholder="Please describe your project, including property size, specific needs, timeline, and any other relevant details..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-success w-100">Send Message</button>
+            </form>
+            
+            <p class="text-muted mt-3 small">* Required fields. We'll respond to your inquiry within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5 bg-success text-white">
+    <div class="container text-center">
+      <h2 class="display-5 fw-bold mb-3">Ready to Transform Your Outdoor Space?</h2>
+      <p class="lead mb-4">Contact us today for a free consultation and let's bring your landscaping vision to life</p>
+      <a href="#contact" class="btn btn-light btn-lg text-success">Get Your Free Quote</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="d-flex align-items-center mb-3">
+            <i class="fas fa-leaf text-success me-2 fs-3"></i>
+            <span class="h4 mb-0">Vera Landscaping</span>
+          </div>
+          <p class="text-light mb-4">
+            Transform your outdoor space with our professional landscaping services. 
+            We bring nature's beauty to your doorstep with expert design and maintenance.
+          </p>
+          <div class="d-flex gap-3">
+            <i class="fab fa-facebook text-success fs-4"></i>
+            <i class="fab fa-instagram text-success fs-4"></i>
+            <i class="fab fa-twitter text-success fs-4"></i>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+            <li><a href="#services" class="text-light text-decoration-none">Services</a></li>
+            <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3">Contact Info</h5>
+          <div class="d-flex align-items-center mb-2">
+            <i class="fas fa-phone text-success me-2"></i>
+            <span class="text-light">(555) 123-4567</span>
+          </div>
+          <div class="d-flex align-items-center mb-2">
+            <i class="fas fa-envelope text-success me-2"></i>
+            <span class="text-light">info@veralandscaping.com</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-map-marker-alt text-success me-2"></i>
+            <span class="text-light">123 Garden St, Green Valley, CA</span>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="my-4">
+      <div class="text-center">
+        <p class="text-light mb-0">© 2024 Vera Landscaping. All rights reserved. | Designed with nature in mind.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- All Services Modal -->
+  <div class="modal fade" id="servicesModal" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">All Our Services</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4" id="all-services-container">
+            <!-- All services will be loaded here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success Toast -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="successToast" class="toast" role="alert">
+      <div class="toast-header">
+        <i class="fas fa-check-circle text-success me-2"></i>
+        <strong class="me-auto">Success</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">
+        Thank you! We'll get back to you within 24 hours.
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
