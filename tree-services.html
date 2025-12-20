@@ -1,402 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tree Services - Vera Landscaping</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-</head>
-<body data-theme="light">
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" id="mainNavbar">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <i class="fas fa-leaf text-success me-2 fs-3"></i>
-        <span class="fw-bold text-success fs-3">Vera</span>
-      </a>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto me-4">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
-              Services
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="services.html">All Services</a></li>
-              <li><a class="dropdown-item" href="lawn-care.html">Lawn Care</a></li>
-              <li><a class="dropdown-item active" href="tree-services.html">Tree Services</a></li>
-              <li><a class="dropdown-item" href="garden-design.html">Garden Design</a></li>
-              <li><a class="dropdown-item" href="irrigation.html">Irrigation</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-       
-        <a href="contact.html" class="btn btn-success">Get Quote</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Page Header -->
-  <section class="page-header bg-success text-white py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-8">
-          <h1 class="display-4 fw-bold mb-3">Tree & Shrub Services</h1>
-          <p class="lead">Expert tree care from certified arborists to keep your trees healthy, safe, and beautiful</p>
-        </div>
-        <div class="col-lg-4 text-end">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb justify-content-lg-end">
-              <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
-              <li class="breadcrumb-item"><a href="services.html" class="text-white">Services</a></li>
-              <li class="breadcrumb-item active text-white" aria-current="page">Tree Services</li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Service Overview -->
-  <section class="py-5 bg-white">
-    <div class="container">
-      <div class="row align-items-center mb-5">
-        <div class="col-lg-6">
-          <h2 class="h1 fw-bold text-dark mb-4">Professional Tree Care</h2>
-          <p class="text-muted mb-4">
-            Trees are valuable assets that require specialized care to maintain their health, safety, and beauty. 
-            Our ISA-certified arborists provide comprehensive tree services using industry best practices and 
-            the latest equipment to ensure your trees thrive for generations.
-          </p>
-          <p class="text-muted mb-4">
-            From routine pruning to emergency storm damage cleanup, we handle all aspects of tree care with 
-            expertise and precision. Our team understands tree biology and uses this knowledge to make 
-            decisions that promote long-term tree health.
-          </p>
-          <div class="d-flex gap-3 mb-4">
-            <div class="certification-badge">
-              <i class="fas fa-certificate text-success me-2"></i>
-              <span class="fw-semibold">ISA Certified</span>
-            </div>
-            <div class="certification-badge">
-              <i class="fas fa-shield-alt text-success me-2"></i>
-              <span class="fw-semibold">Fully Insured</span>
-            </div>
-          </div>
-          <a href="contact.html" class="btn btn-success btn-lg">
-            Schedule Tree Assessment <i class="fas fa-arrow-right ms-2"></i>
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-               alt="Professional tree pruning" class="img-fluid rounded shadow">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Emergency Alert -->
-  <section class="py-3 bg-warning">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-8">
-          <div class="d-flex align-items-center">
-            <i class="fas fa-exclamation-triangle text-dark me-3 fs-4"></i>
-            <div>
-              <h6 class="mb-1 fw-bold text-dark">24/7 Emergency Tree Services</h6>
-              <p class="mb-0 text-dark">Storm damage? Fallen trees? We're here to help anytime, day or night.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 text-end">
-          <a href="tel:5551234567" class="btn btn-dark btn-lg">
-            <i class="fas fa-phone me-2"></i>Emergency: (555) 123-4567
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services List -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="display-5 fw-bold text-dark mb-3">Our Tree Services</h2>
-        <p class="lead text-muted">Comprehensive care for all your tree and shrub needs</p>
-      </div>
-      
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="service-detail-card card h-100 border-0 shadow">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <div class="service-icon-sm bg-success text-white rounded-circle me-3">
-                  <i class="fas fa-cut"></i>
-                </div>
-                <h5 class="card-title mb-0">Tree Pruning & Trimming</h5>
-              </div>
-              <p class="card-text text-muted mb-3">
-                Professional pruning to improve tree health, structure, and appearance. 
-                We follow ANSI A300 standards for proper pruning techniques.
-              </p>
-              <ul class="list-unstyled">
-                <li><i class="fas fa-check text-success me-2"></i>Crown cleaning and thinning</li>
-                <li><i class="fas fa-check text-success me-2"></i>Deadwood removal</li>
-                <li><i class="fas fa-check text-success me-2"></i>Structural pruning</li>
-                <li><i class="fas fa-check text-success me-2"></i>Vista pruning</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-6">
-          <div class="service-detail-card card h-100 border-0 shadow">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <div class="service-icon-sm bg-success text-white rounded-circle me-3">
-                  <i class="fas fa-tree"></i>
-                </div>
-                <h5 class="card-title mb-0">Tree Removal</h5>
-              </div>
-              <p class="card-text text-muted mb-3">
-                Safe and efficient tree removal when necessary. We use advanced rigging 
-                techniques to protect your property during removal.
-              </p>
-              <ul class="list-unstyled">
-                <li><i class="fas fa-check text-success me-2"></i>Hazardous tree removal</li>
-                <li><i class="fas fa-check text-success me-2"></i>Crane-assisted removal</li>
-                <li><i class="fas fa-check text-success me-2"></i>Sectional dismantling</li>
-                <li><i class="fas fa-check text-success me-2"></i>Complete cleanup</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-6">
-          <div class="service-detail-card card h-100 border-0 shadow">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <div class="service-icon-sm bg-success text-white rounded-circle me-3">
-                  <i class="fas fa-cog"></i>
-                </div>
-                <h5 class="card-title mb-0">Stump Grinding</h5>
-              </div>
-              <p class="card-text text-muted mb-3">
-                Complete stump removal using professional grinding equipment. 
-                We grind stumps below ground level and clean up all debris.
-              </p>
-              <ul class="list-unstyled">
-                <li><i class="fas fa-check text-success me-2"></i>Below-grade grinding</li>
-                <li><i class="fas fa-check text-success me-2"></i>Root system removal</li>
-                <li><i class="fas fa-check text-success me-2"></i>Chip removal or mulching</li>
-                <li><i class="fas fa-check text-success me-2"></i>Site restoration</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-6">
-          <div class="service-detail-card card h-100 border-0 shadow">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <div class="service-icon-sm bg-success text-white rounded-circle me-3">
-                  <i class="fas fa-stethoscope"></i>
-                </div>
-                <h5 class="card-title mb-0">Tree Health Assessment</h5>
-              </div>
-              <p class="card-text text-muted mb-3">
-                Comprehensive tree health evaluations to identify diseases, pests, 
-                and structural issues before they become serious problems.
-              </p>
-              <ul class="list-unstyled">
-                <li><i class="fas fa-check text-success me-2"></i>Disease diagnosis</li>
-                <li><i class="fas fa-check text-success me-2"></i>Pest identification</li>
-                <li><i class="fas fa-check text-success me-2"></i>Structural assessment</li>
-                <li><i class="fas fa-check text-success me-2"></i>Treatment recommendations</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-6">
-          <div class="service-detail-card card h-100 border-0 shadow">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <div class="service-icon-sm bg-success text-white rounded-circle me-3">
-                  <i class="fas fa-seedling"></i>
-                </div>
-                <h5 class="card-title mb-0">Tree Planting</h5>
-              </div>
-              <p class="card-text text-muted mb-3">
-                Professional tree selection and planting services. We help you choose 
-                the right trees for your site conditions and aesthetic goals.
-              </p>
-              <ul class="list-unstyled">
-                <li><i class="fas fa-check text-success me-2"></i>Species selection consultation</li>
-                <li><i class="fas fa-check text-success me-2"></i>Proper planting techniques</li>
-                <li><i class="fas fa-check text-success me-2"></i>Soil preparation</li>
-                <li><i class="fas fa-check text-success me-2"></i>Initial care instructions</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-6">
-          <div class="service-detail-card card h-100 border-0 shadow">
-            <div class="card-body p-4">
-              <div class="d-flex align-items-center mb-3">
-                <div class="service-icon-sm bg-success text-white rounded-circle me-3">
-                  <i class="fas fa-leaf"></i>
-                </div>
-                <h5 class="card-title mb-0">Shrub Care</h5>
-              </div>
-              <p class="card-text text-muted mb-3">
-                Complete shrub maintenance including pruning, shaping, and health care 
-                to keep your landscape shrubs looking their best.
-              </p>
-              <ul class="list-unstyled">
-                <li><i class="fas fa-check text-success me-2"></i>Seasonal pruning</li>
-                <li><i class="fas fa-check text-success me-2"></i>Hedge trimming</li>
-                <li><i class="fas fa-check text-success me-2"></i>Rejuvenation pruning</li>
-                <li><i class="fas fa-check text-success me-2"></i>Pest and disease treatment</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Choose Us -->
-  <section class="py-5 bg-white">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="display-5 fw-bold text-dark mb-3">Why Choose Our Tree Services?</h2>
-        <p class="lead text-muted">Experience, expertise, and commitment to excellence</p>
-      </div>
-      
-      <div class="row g-4">
-        <div class="col-lg-4 text-center">
-          <div class="feature-card p-4">
-            <div class="feature-icon bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
-              <i class="fas fa-certificate text-success fs-2"></i>
-            </div>
-            <h5 class="fw-bold">ISA Certified Arborists</h5>
-            <p class="text-muted">Our team includes International Society of Arboriculture certified professionals with extensive training and experience.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 text-center">
-          <div class="feature-card p-4">
-            <div class="feature-icon bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
-              <i class="fas fa-tools text-success fs-2"></i>
-            </div>
-            <h5 class="fw-bold">Professional Equipment</h5>
-            <p class="text-muted">We use state-of-the-art equipment and follow industry safety standards to ensure efficient and safe tree care.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 text-center">
-          <div class="feature-card p-4">
-            <div class="feature-icon bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
-              <i class="fas fa-clock text-success fs-2"></i>
-            </div>
-            <h5 class="fw-bold">Emergency Response</h5>
-            <p class="text-muted">24/7 emergency tree services for storm damage, fallen trees, and other urgent tree-related issues.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="py-5 bg-success text-white">
-    <div class="container text-center">
-      <h2 class="display-5 fw-bold mb-3">Need Professional Tree Care?</h2>
-      <p class="lead mb-4">Trust our certified arborists to keep your trees healthy and beautiful</p>
-      <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
-        <a href="contact.html" class="btn btn-light btn-lg text-success">
-          <i class="fas fa-calendar-alt me-2"></i>Schedule Assessment
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="landscaping, gardening, lawn care, outdoor services , vera landscaping "
+    />
+    <meta
+      name="description"
+      content="Professional landscaping services by Vera Landscaping. Transform your outdoor space with expert lawn care, garden design, and maintenance."
+    />
+    <meta name="author" content="Vera Landscaping Team" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Tree Services - Vera Landscaping</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body data-theme="light">
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+      id="mainNavbar"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <i class="fas fa-leaf text-success me-2 fs-3"></i>
+          <span class="fw-bold text-success fs-3">Vera</span>
         </a>
-        <a href="tel:5551234567" class="btn btn-outline-light btn-lg">
-          <i class="fas fa-phone me-2"></i>Call (555) 123-4567
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="d-flex align-items-center mb-3">
-            <i class="fas fa-leaf text-success me-2 fs-3"></i>
-            <span class="h4 mb-0">Vera Landscaping</span>
-          </div>
-          <p class="text-light mb-4">
-            Transform your outdoor space with our professional landscaping services. 
-            We bring nature's beauty to your doorstep with expert design and maintenance.
-          </p>
-          <div class="d-flex gap-3">
-            <i class="fab fa-facebook text-success fs-4"></i>
-            <i class="fab fa-instagram text-success fs-4"></i>
-            <i class="fab fa-twitter text-success fs-4"></i>
-          </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6">
-          <h5 class="mb-3">Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
-            <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
-            <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
-            <li><a href="portfolio.html" class="text-light text-decoration-none">Portfolio</a></li>
-            <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="services.html">All Services</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="lawn-care.html">Lawn Care</a>
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="tree-services.html"
+                    >Tree Services</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="garden-design.html"
+                    >Garden Design</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="irrigation.html">Irrigation</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
-        </div>
-        
-        <div class="col-lg-3 col-md-6">
-          <h5 class="mb-3">Contact Info</h5>
-          <div class="d-flex align-items-center mb-2">
-            <i class="fas fa-phone text-success me-2"></i>
-            <span class="text-light">(555) 123-4567</span>
-          </div>
-          <div class="d-flex align-items-center mb-2">
-            <i class="fas fa-envelope text-success me-2"></i>
-            <span class="text-light">info@veralandscaping.com</span>
-          </div>
-          <div class="d-flex align-items-center">
-            <i class="fas fa-map-marker-alt text-success me-2"></i>
-            <span class="text-light">123 Garden St, Green Valley, CA</span>
-          </div>
-        </div>
-      </div>
-      
-      <hr class="my-4">
-      <div class="text-center">
-        <p class="text-light mb-0">© 2024 Vera Landscaping. All rights reserved. | Designed with nature in mind.</p>
-      </div>
-    </div>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
-</body>
+          <a href="contact.html" class="btn btn-success">Get Quote</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-success text-white py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h1 class="display-4 fw-bold mb-3">Tree & Shrub Services</h1>
+            <p class="lead">
+              Expert tree care from certified arborists to keep your trees
+              healthy, safe, and beautiful
+            </p>
+          </div>
+          <div class="col-lg-4 text-end">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-lg-end">
+                <li class="breadcrumb-item">
+                  <a href="index.html" class="text-white">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="services.html" class="text-white">Services</a>
+                </li>
+                <li
+                  class="breadcrumb-item active text-white"
+                  aria-current="page"
+                >
+                  Tree Services
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6">
+            <h2 class="h1 fw-bold text-dark mb-4">Professional Tree Care</h2>
+            <p class="text-muted mb-4">
+              Trees are valuable assets that require specialized care to
+              maintain their health, safety, and beauty. Our ISA-certified
+              arborists provide comprehensive tree services using industry best
+              practices and the latest equipment to ensure your trees thrive for
+              generations.
+            </p>
+            <p class="text-muted mb-4">
+              From routine pruning to emergency storm damage cleanup, we handle
+              all aspects of tree care with expertise and precision. Our team
+              understands tree biology and uses this knowledge to make decisions
+              that promote long-term tree health.
+            </p>
+            <div class="d-flex gap-3 mb-4">
+              <div class="certification-badge">
+                <i class="fas fa-certificate text-success me-2"></i>
+                <span class="fw-semibold">ISA Certified</span>
+              </div>
+              <div class="certification-badge">
+                <i class="fas fa-shield-alt text-success me-2"></i>
+                <span class="fw-semibold">Fully Insured</span>
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-success btn-lg">
+              Schedule Tree Assessment <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Professional tree pruning"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Alert -->
+    <section class="py-3 bg-warning">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-exclamation-triangle text-dark me-3 fs-4"></i>
+              <div>
+                <h6 class="mb-1 fw-bold text-dark">
+                  24/7 Emergency Tree Services
+                </h6>
+                <p class="mb-0 text-dark">
+                  Storm damage? Fallen trees? We're here to help anytime, day or
+                  night.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-end">
+            <a href="tel:5551234567" class="btn btn-dark btn-lg">
+              <i class="fas fa-phone me-2"></i>Emergency: (555) 123-4567
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services List -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold text-dark mb-3">Our Tree Services</h2>
+          <p class="lead text-muted">
+            Comprehensive care for all your tree and shrub needs
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="service-detail-card card h-100 border-0 shadow">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div
+                    class="service-icon-sm bg-success text-white rounded-circle me-3"
+                  >
+                    <i class="fas fa-cut"></i>
+                  </div>
+                  <h5 class="card-title mb-0">Tree Pruning & Trimming</h5>
+                </div>
+                <p class="card-text text-muted mb-3">
+                  Professional pruning to improve tree health, structure, and
+                  appearance. We follow ANSI A300 standards for proper pruning
+                  techniques.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Crown cleaning
+                    and thinning
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Deadwood
+                    removal
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Structural
+                    pruning
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Vista pruning
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="service-detail-card card h-100 border-0 shadow">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div
+                    class="service-icon-sm bg-success text-white rounded-circle me-3"
+                  >
+                    <i class="fas fa-tree"></i>
+                  </div>
+                  <h5 class="card-title mb-0">Tree Removal</h5>
+                </div>
+                <p class="card-text text-muted mb-3">
+                  Safe and efficient tree removal when necessary. We use
+                  advanced rigging techniques to protect your property during
+                  removal.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Hazardous tree
+                    removal
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Crane-assisted
+                    removal
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Sectional
+                    dismantling
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Complete
+                    cleanup
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="service-detail-card card h-100 border-0 shadow">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div
+                    class="service-icon-sm bg-success text-white rounded-circle me-3"
+                  >
+                    <i class="fas fa-cog"></i>
+                  </div>
+                  <h5 class="card-title mb-0">Stump Grinding</h5>
+                </div>
+                <p class="card-text text-muted mb-3">
+                  Complete stump removal using professional grinding equipment.
+                  We grind stumps below ground level and clean up all debris.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Below-grade
+                    grinding
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Root system
+                    removal
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Chip removal
+                    or mulching
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Site
+                    restoration
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="service-detail-card card h-100 border-0 shadow">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div
+                    class="service-icon-sm bg-success text-white rounded-circle me-3"
+                  >
+                    <i class="fas fa-stethoscope"></i>
+                  </div>
+                  <h5 class="card-title mb-0">Tree Health Assessment</h5>
+                </div>
+                <p class="card-text text-muted mb-3">
+                  Comprehensive tree health evaluations to identify diseases,
+                  pests, and structural issues before they become serious
+                  problems.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Disease
+                    diagnosis
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Pest
+                    identification
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Structural
+                    assessment
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Treatment
+                    recommendations
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="service-detail-card card h-100 border-0 shadow">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div
+                    class="service-icon-sm bg-success text-white rounded-circle me-3"
+                  >
+                    <i class="fas fa-seedling"></i>
+                  </div>
+                  <h5 class="card-title mb-0">Tree Planting</h5>
+                </div>
+                <p class="card-text text-muted mb-3">
+                  Professional tree selection and planting services. We help you
+                  choose the right trees for your site conditions and aesthetic
+                  goals.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Species
+                    selection consultation
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Proper
+                    planting techniques
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Soil
+                    preparation
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Initial care
+                    instructions
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="service-detail-card card h-100 border-0 shadow">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div
+                    class="service-icon-sm bg-success text-white rounded-circle me-3"
+                  >
+                    <i class="fas fa-leaf"></i>
+                  </div>
+                  <h5 class="card-title mb-0">Shrub Care</h5>
+                </div>
+                <p class="card-text text-muted mb-3">
+                  Complete shrub maintenance including pruning, shaping, and
+                  health care to keep your landscape shrubs looking their best.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Seasonal
+                    pruning
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Hedge trimming
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Rejuvenation
+                    pruning
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Pest and
+                    disease treatment
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold text-dark mb-3">
+            Why Choose Our Tree Services?
+          </h2>
+          <p class="lead text-muted">
+            Experience, expertise, and commitment to excellence
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 text-center">
+            <div class="feature-card p-4">
+              <div
+                class="feature-icon bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+              >
+                <i class="fas fa-certificate text-success fs-2"></i>
+              </div>
+              <h5 class="fw-bold">ISA Certified Arborists</h5>
+              <p class="text-muted">
+                Our team includes International Society of Arboriculture
+                certified professionals with extensive training and experience.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="feature-card p-4">
+              <div
+                class="feature-icon bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+              >
+                <i class="fas fa-tools text-success fs-2"></i>
+              </div>
+              <h5 class="fw-bold">Professional Equipment</h5>
+              <p class="text-muted">
+                We use state-of-the-art equipment and follow industry safety
+                standards to ensure efficient and safe tree care.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="feature-card p-4">
+              <div
+                class="feature-icon bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+              >
+                <i class="fas fa-clock text-success fs-2"></i>
+              </div>
+              <h5 class="fw-bold">Emergency Response</h5>
+              <p class="text-muted">
+                24/7 emergency tree services for storm damage, fallen trees, and
+                other urgent tree-related issues.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-success text-white">
+      <div class="container text-center">
+        <h2 class="display-5 fw-bold mb-3">Need Professional Tree Care?</h2>
+        <p class="lead mb-4">
+          Trust our certified arborists to keep your trees healthy and beautiful
+        </p>
+        <div
+          class="d-flex flex-column flex-md-row gap-3 justify-content-center"
+        >
+          <a href="contact.html" class="btn btn-light btn-lg text-success">
+            <i class="fas fa-calendar-alt me-2"></i>Schedule Assessment
+          </a>
+          <a href="tel:5551234567" class="btn btn-outline-light btn-lg">
+            <i class="fas fa-phone me-2"></i>Call (555) 123-4567
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-leaf text-success me-2 fs-3"></i>
+              <span class="h4 mb-0">Vera Landscaping</span>
+            </div>
+            <p class="text-light mb-4">
+              Transform your outdoor space with our professional landscaping
+              services. We bring nature's beauty to your doorstep with expert
+              design and maintenance.
+            </p>
+            <div class="d-flex gap-3">
+              <i class="fab fa-facebook text-success fs-4"></i>
+              <i class="fab fa-instagram text-success fs-4"></i>
+              <i class="fab fa-twitter text-success fs-4"></i>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-light text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="text-light text-decoration-none"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="text-light text-decoration-none"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="portfolio.html" class="text-light text-decoration-none"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="text-light text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Contact Info</h5>
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-phone text-success me-2"></i>
+              <span class="text-light">(555) 123-4567</span>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-envelope text-success me-2"></i>
+              <span class="text-light">info@veralandscaping.com</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="fas fa-map-marker-alt text-success me-2"></i>
+              <span class="text-light">123 Garden St, Green Valley, CA</span>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+        <div class="text-center">
+          <p class="text-light mb-0">
+            © 2024 Vera Landscaping. All rights reserved. | Designed with nature
+            in mind.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
