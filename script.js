@@ -7,7 +7,7 @@ const testimonials = [
     content: "Vera Landscaping transformed our backyard into a beautiful oasis. The team was professional, creative, and delivered exactly what we envisioned. Highly recommended!",
     rating: 5,
     location: "Green Valley, CA",
-    imageUrl: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+    imageUrl : "https://randomuser.me/api/portraits/women/32.jpg"
   },
   {
     name: "Michael Chen",
@@ -132,6 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
   loadTestimonials();
   initializeContactForm();
   initializeScrollAnimations();
+  initializePortfolio();
 });
 
 // Navigation functionality
@@ -329,15 +330,207 @@ function initializeScrollAnimations() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('fade-in-up');
+        if (entry.target.classList.contains('portfolio-card')) {
+          entry.target.classList.add('zoom-in');
+        }
       }
     });
   }, observerOptions);
 
   // Observe elements for animation
-  document.querySelectorAll('.service-card, .testimonial-card, .card').forEach(el => {
+  document.querySelectorAll('.service-card, .testimonial-card, .portfolio-card').forEach(el => {
     observer.observe(el);
   });
 }
+
+// -----------------------
+// Portfolio: filtering & modal
+// -----------------------
+const portfolioItems = [
+  {
+    id: 'p1',
+    title: 'Cozy Residential Garden',
+    category: 'residential',
+    image: '/ASSETS/IMAGES/Portfolio/residential-garden.png',
+    description: 'A small front-yard transformation using native plants and permeable pavers to improve curb appeal.',
+    features: ['Native plant palette', 'Permeable paving', 'Low-water irrigation']
+  },
+
+  {
+    id: 'p2',
+    title: 'Modern Commercial Entrance',
+    category: 'commercial',
+    image: '/ASSETS/IMAGES/Portfolio/modern-commercial-entrance.png',
+    description: 'A contemporary landscape for a commercial office with clean lines and low maintenance plants.',
+    features: ['Low-maintenance design', 'Hardscape accents', 'Lighting integration']
+  },
+
+  {
+    id: 'p3',
+    title: 'Cottage Garden Makeover',
+    category: 'garden',
+    image: '/ASSETS/IMAGES/Portfolio/cottage-garden.png',
+    description: 'Colorful layered planting beds, custom pathways and seasonal interest throughout the year.',
+    features: ['Seasonal color plan', 'Custom paths', 'Planting design']
+  },
+
+  {
+    id: 'p4',
+    title: 'Stone Patio & Retaining Wall',
+    category: 'hardscape',
+    image: '/ASSETS/IMAGES/Portfolio/stone-patting.png',
+    description: 'Durable stone patio with integrated seating and retaining walls to create usable terraces.',
+    features: ['Retaining walls', 'Patio installation', 'Integrated seating']
+  },
+
+  {
+    id: 'p5',
+    title: 'Xeriscape Front Yard',
+    category: 'residential',
+    image: '/ASSETS/IMAGES/Portfolio/xeriscape.png',
+    description: 'A drought-tolerant xeriscape design with gravel, succulents and boulder accents.',
+    features: ['Drought-tolerant', 'Low maintenance', 'Rock accents']
+  },
+
+  {
+    id: 'p6',
+    title: 'Rooftop Garden Oasis',
+    category: 'commercial',
+    image: '/ASSETS/IMAGES/Portfolio/oasis.png',
+    description: 'A rooftop installation offering greenery, seating and planters for an urban office.',
+    features: ['Planter design', 'Irrigation', 'Seating areas']
+  },
+
+  {
+    id: 'p7',
+    title: 'Native Meadow Restoration',
+    category: 'garden',
+    image: '/ASSETS/IMAGES/Portfolio/meadow.png',
+    description: 'Restoring native meadow plantings to support pollinators and biodiversity.',
+    features: ['Pollinator-friendly', 'Soil improvement', 'Seed mix']
+  },
+
+  {
+    id: 'p8',
+    title: 'Terraced Backyard Retreat',
+    category: 'hardscape',
+    image: '/ASSETS/IMAGES/Portfolio/retreat.png',
+    description: 'Multi-level terraced landscaping that maximizes slope usability with stone steps and planting.',
+    features: ['Terracing', 'Steps', 'Retaining structures']
+  }
+];
+
+
+function initializePortfolio() {
+  loadPortfolioGallery();
+  setupPortfolioFilter();
+}
+
+function loadPortfolioGallery(filter = 'all') {
+  const container = document.getElementById('portfolioGallery');
+  if (!container) return;
+
+  const itemsToShow = portfolioItems.filter(item => filter === 'all' ? true : item.category === filter);
+
+  container.innerHTML = itemsToShow.map(item => `
+    <div class="col-lg-4 col-md-6" data-category="${item.category}">
+      <div class="card portfolio-card h-100 border-0 shadow" role="button" onclick="openPortfolioModal('${item.id}')">
+        <div class="portfolio-image-wrap position-relative">
+          <img
+            src="${item.image}"
+            class="card-img-top"
+            loading="lazy"
+            decoding="async"
+            onerror="handleImgError(this)"
+            alt="${item.title}">
+            <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3">
+              <div>
+                <h5 class="text-white fw-bold mb-1">${item.title}</h5>
+                <small class="badge bg-success text-white">${capitalize(item.category)}</small>
+                <p class="overlay-desc text-white mt-2 mb-2">${item.description}</p>
+                <div class="overlay-features">
+                  ${item.features.map(f => `<span>${f}</span>`).join('')}
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function setupPortfolioFilter() {
+  const filterGroup = document.getElementById('portfolioFilter');
+  if (!filterGroup) return;
+
+  filterGroup.addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-filter]');
+    if (!btn) return;
+    const filter = btn.getAttribute('data-filter');
+
+    // update active state
+    filterGroup.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // reload gallery
+    loadPortfolioGallery(filter);
+  });
+}
+
+function openPortfolioModal(id) {
+  const item = portfolioItems.find(i => i.id === id);
+  if (!item) return;
+
+  const modalTitle = document.getElementById('portfolioModalTitle');
+  const modalBody = document.getElementById('portfolioModalBody');
+  if (!modalTitle || !modalBody) return;
+
+  modalTitle.textContent = item.title;
+  modalBody.innerHTML = `
+    <div class="row">
+        <div class="col-lg-7 mb-3">
+        <img
+          src="${item.image}"
+          alt="${item.title}"
+          class="img-fluid rounded"
+          loading="lazy"
+          decoding="async"
+          onerror="handleImgError(this)">
+      </div>
+      <div class="col-lg-5">
+        <h5 class="fw-bold">Project Details</h5>
+        <p class="text-muted">${item.description}</p>
+        <ul class="list-unstyled">
+          ${item.features.map(f => `<li class="mb-2"><i class="fas fa-check text-success me-2"></i>${f}</li>`).join('')}
+        </ul>
+      </div>
+    </div>
+  `;
+
+  const modalEl = document.getElementById('portfolioModal');
+  const bsModal = new bootstrap.Modal(modalEl);
+  bsModal.show();
+}
+
+function capitalize(s) {
+  if (!s) return '';
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+// expose modal opener for inline onclick usage
+window.openPortfolioModal = openPortfolioModal;
+
+// Fallback handler for images that fail to load (sets a generic themed image)
+function handleImgError(img) {
+  try {
+    img.onerror = null;
+    const fallback = 'https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80';
+    img.src = fallback;
+  } catch (e) {
+    // ignore
+  }
+}
+
 
 // Utility functions
 function debounce(func, wait) {
