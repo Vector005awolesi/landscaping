@@ -255,46 +255,41 @@ function initializeContactForm() {
 
 function handleContactSubmit(e) {
   e.preventDefault();
-  
-  const formData = new FormData(e.target);
-  const data = Object.fromEntries(formData);
-  
-  // Validate required fields
-  if (!data.name || !data.email || !data.service || !data.message) {
-    showToast('Please fill in all required fields.', 'error');
-    return;
-  }
 
-  // Simulate form submission
-  const submitButton = e.target.querySelector('button[type="submit"]');
-  const originalText = submitButton.textContent;
-  
+  const form = e.target;
+  const formData = new FormData(form);
+
+  // Button handling (matches your logic)
+  const submitButton = form.querySelector('button[type="submit"]');
+  const originalHTML = submitButton.innerHTML;
+
   submitButton.disabled = true;
   submitButton.innerHTML = '<span class="loading"></span> Sending...';
-  
-  // Simulate API call
-  setTimeout(() => {
-    // Reset form
-    e.target.reset();
-    
-    // Reset button
-    submitButton.disabled = false;
-    submitButton.textContent = originalText;
-    
-    // Show success message
-    showToast('Thank you! We\'ll get back to you within 24 hours.', 'success');
-    
-    // Store submission in localStorage (for demo purposes)
-    const submissions = JSON.parse(localStorage.getItem('contactSubmissions') || '[]');
-    submissions.push({
-      ...data,
-      timestamp: new Date().toISOString(),
-      status: 'new'
+
+  // Send to Netlify
+  fetch('/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: new URLSearchParams(formData).toString()
+  })
+    .then(() => {
+      form.reset();
+      showToast("Thank you! We'll get back to you within 24 hours.", 'success');
+    })
+    .catch(() => {
+      showToast('Something went wrong. Please try again.', 'error');
+    })
+    .finally(() => {
+      submitButton.disabled = false;
+      submitButton.innerHTML = originalHTML;
     });
-    localStorage.setItem('contactSubmissions', JSON.stringify(submissions));
-    
-  }, 2000);
 }
+
+// Initialize after DOM loads
+document.addEventListener('DOMContentLoaded', initializeContactForm);
+
 
 function showToast(message, type = 'success') {
   const toast = document.getElementById('successToast');
