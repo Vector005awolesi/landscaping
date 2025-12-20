@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Vera Landscaping</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body data-theme="light">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="fas fa-leaf text-success me-2 fs-3"></i>
+        <span class="fw-bold text-success fs-3">Vera</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-4">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="services.html">All Services</a></li>
+              <li><a class="dropdown-item" href="lawn-care.html">Lawn Care</a></li>
+              <li><a class="dropdown-item" href="tree-services.html">Tree Services</a></li>
+              <li><a class="dropdown-item" href="garden-design.html">Garden Design</a></li>
+              <li><a class="dropdown-item" href="irrigation.html">Irrigation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-secondary me-2" id="themeToggle">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="contact.html" class="btn btn-success">Get Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header bg-success text-white py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold mb-3">Our Services</h1>
+          <p class="lead">Comprehensive landscaping solutions for every outdoor need</p>
+        </div>
+        <div class="col-lg-4 text-end">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-lg-end">
+              <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+              <li class="breadcrumb-item active text-white" aria-current="page">Services</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-dark mb-3">Complete Landscaping Solutions</h2>
+        <p class="lead text-muted max-w-3xl mx-auto">
+          From design to maintenance, we offer comprehensive landscaping services to transform and maintain your outdoor spaces. 
+          Our expert team combines creativity, sustainability, and craftsmanship to deliver exceptional results.
+        </p>
+      </div>
+      
+      <div class="row g-4" id="all-services-container">
+        <!-- Services will be loaded here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-dark mb-3">Our Process</h2>
+        <p class="lead text-muted">How we bring your landscaping vision to life</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="process-step">
+            <div class="process-number bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+              <span class="fw-bold">1</span>
+            </div>
+            <h5 class="fw-bold">Consultation</h5>
+            <p class="text-muted">We meet with you to understand your vision, assess your space, and discuss your needs and budget.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="process-step">
+            <div class="process-number bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+              <span class="fw-bold">2</span>
+            </div>
+            <h5 class="fw-bold">Design</h5>
+            <p class="text-muted">Our team creates a detailed design plan with plant selections, layouts, and material specifications.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="process-step">
+            <div class="process-number bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+              <span class="fw-bold">3</span>
+            </div>
+            <h5 class="fw-bold">Installation</h5>
+            <p class="text-muted">We execute the project with precision, using quality materials and expert craftsmanship.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="process-step">
+            <div class="process-number bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+              <span class="fw-bold">4</span>
+            </div>
+            <h5 class="fw-bold">Maintenance</h5>
+            <p class="text-muted">We provide ongoing care and maintenance to keep your landscape looking beautiful year-round.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-dark mb-3">Service Packages</h2>
+        <p class="lead text-muted">Flexible options to fit your needs and budget</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="pricing-card card border-0 shadow h-100">
+            <div class="card-body p-4 text-center">
+              <h5 class="card-title fw-bold text-success">Basic Care</h5>
+              <div class="price mb-3">
+                <span class="h2 fw-bold">$150</span>
+                <span class="text-muted">/month</span>
+              </div>
+              <ul class="list-unstyled text-start">
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Bi-weekly lawn mowing</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Edge trimming</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Basic weed control</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Seasonal cleanup</li>
+              </ul>
+              <a href="contact.html" class="btn btn-outline-success w-100">Get Started</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <div class="pricing-card card border-success shadow h-100 position-relative">
+            <div class="badge bg-success position-absolute top-0 start-50 translate-middle px-3 py-2">Most Popular</div>
+            <div class="card-body p-4 text-center">
+              <h5 class="card-title fw-bold text-success">Complete Care</h5>
+              <div class="price mb-3">
+                <span class="h2 fw-bold">$300</span>
+                <span class="text-muted">/month</span>
+              </div>
+              <ul class="list-unstyled text-start">
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Weekly lawn maintenance</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Fertilization program</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Pest & weed control</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Pruning & trimming</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Seasonal plantings</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Irrigation monitoring</li>
+              </ul>
+              <a href="contact.html" class="btn btn-success w-100">Get Started</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <div class="pricing-card card border-0 shadow h-100">
+            <div class="card-body p-4 text-center">
+              <h5 class="card-title fw-bold text-success">Premium Care</h5>
+              <div class="price mb-3">
+                <span class="h2 fw-bold">$500</span>
+                <span class="text-muted">/month</span>
+              </div>
+              <ul class="list-unstyled text-start">
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Everything in Complete Care</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Monthly design consultation</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Tree health monitoring</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Soil testing & amendments</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Priority emergency service</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Annual landscape refresh</li>
+              </ul>
+              <a href="contact.html" class="btn btn-outline-success w-100">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-5">
+        <p class="text-muted">
+          <i class="fas fa-info-circle me-2"></i>
+          All packages include free consultations and custom quotes for additional services. 
+          <a href="contact.html" class="text-success">Contact us</a> for commercial pricing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5 bg-success text-white">
+    <div class="container text-center">
+      <h2 class="display-5 fw-bold mb-3">Ready to Transform Your Landscape?</h2>
+      <p class="lead mb-4">Let's discuss your project and create a custom solution that fits your needs and budget</p>
+      <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+        <a href="contact.html" class="btn btn-light btn-lg text-success">
+          <i class="fas fa-calendar-alt me-2"></i>Schedule Consultation
+        </a>
+        <a href="tel:5551234567" class="btn btn-outline-light btn-lg">
+          <i class="fas fa-phone me-2"></i>Call (555) 123-4567
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="d-flex align-items-center mb-3">
+            <i class="fas fa-leaf text-success me-2 fs-3"></i>
+            <span class="h4 mb-0">Vera Landscaping</span>
+          </div>
+          <p class="text-light mb-4">
+            Transform your outdoor space with our professional landscaping services. 
+            We bring nature's beauty to your doorstep with expert design and maintenance.
+          </p>
+          <div class="d-flex gap-3">
+            <i class="fab fa-facebook text-success fs-4"></i>
+            <i class="fab fa-instagram text-success fs-4"></i>
+            <i class="fab fa-twitter text-success fs-4"></i>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+            <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+            <li><a href="portfolio.html" class="text-light text-decoration-none">Portfolio</a></li>
+            <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3">Contact Info</h5>
+          <div class="d-flex align-items-center mb-2">
+            <i class="fas fa-phone text-success me-2"></i>
+            <span class="text-light">(555) 123-4567</span>
+          </div>
+          <div class="d-flex align-items-center mb-2">
+            <i class="fas fa-envelope text-success me-2"></i>
+            <span class="text-light">info@veralandscaping.com</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-map-marker-alt text-success me-2"></i>
+            <span class="text-light">123 Garden St, Green Valley, CA</span>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="my-4">
+      <div class="text-center">
+        <p class="text-light mb-0">© 2024 Vera Landscaping. All rights reserved. | Designed with nature in mind.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
