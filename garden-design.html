@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garden Design - Vera Landscaping</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body data-theme="light">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="fas fa-leaf text-success me-2 fs-3"></i>
+        <span class="fw-bold text-success fs-3">Vera</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-4">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="services.html">All Services</a></li>
+              <li><a class="dropdown-item" href="lawn-care.html">Lawn Care</a></li>
+              <li><a class="dropdown-item" href="tree-services.html">Tree Services</a></li>
+              <li><a class="dropdown-item active" href="garden-design.html">Garden Design</a></li>
+              <li><a class="dropdown-item" href="irrigation.html">Irrigation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-secondary me-2" id="themeToggle">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="contact.html" class="btn btn-success">Get Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header bg-success text-white py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold mb-3">Garden Design & Installation</h1>
+          <p class="lead">Custom garden designs that reflect your style and create beautiful, sustainable outdoor spaces</p>
+        </div>
+        <div class="col-lg-4 text-end">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-lg-end">
+              <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+              <li class="breadcrumb-item"><a href="services.html" class="text-white">Services</a></li>
+              <li class="breadcrumb-item active text-white" aria-current="page">Garden Design</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Overview -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+          <h2 class="h1 fw-bold text-dark mb-4">Creating Garden Masterpieces</h2>
+          <p class="text-muted mb-4">
+            Every garden tells a story. Our expert designers work closely with you to create outdoor spaces 
+            that reflect your personality, lifestyle, and vision. From intimate cottage gardens to modern 
+            minimalist landscapes, we bring your dreams to life with creativity and expertise.
+          </p>
+          <p class="text-muted mb-4">
+            We believe in sustainable design practices that work with nature, not against it. Our gardens 
+            are designed to thrive in your local climate while providing year-round beauty and functionality. 
+            We carefully select plants that will flourish in your specific conditions.
+          </p>
+          <a href="contact.html" class="btn btn-success btn-lg">
+            Start Your Design Journey <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Beautiful garden design" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Process -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-dark mb-3">Our Design Process</h2>
+        <p class="lead text-muted">From concept to completion, we guide you through every step</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="process-card text-center p-4">
+            <div class="process-step-number bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+              <span class="fw-bold">1</span>
+            </div>
+            <h5 class="fw-bold">Consultation & Site Analysis</h5>
+            <p class="text-muted">We meet with you to understand your vision, assess your site conditions, and discuss your budget and timeline.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="process-card text-center p-4">
+            <div class="process-step-number bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+              <span class="fw-bold">2</span>
+            </div>
+            <h5 class="fw-bold">Concept Development</h5>
+            <p class="text-muted">Our designers create initial concepts and mood boards to capture the style and feel of your future garden.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="process-card text-center p-4">
+            <div class="process-step-number bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+              <span class="fw-bold">3</span>
+            </div>
+            <h5 class="fw-bold">Detailed Design</h5>
+            <p class="text-muted">We develop detailed plans with plant selections, materials, and layout specifications for your approval.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="process-card text-center p-4">
+            <div class="process-step-number bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+              <span class="fw-bold">4</span>
+            </div>
+            <h5 class="fw-bold">Installation & Care</h5>
+            <p class="text-muted">Our skilled team brings the design to life with expert installation and provides ongoing care guidance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Garden Types -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-dark mb-3">Garden Styles We Create</h2>
+        <p class="lead text-muted">From traditional to contemporary, we design gardens to match your style</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="garden-style-card card h-100 border-0 shadow">
+            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                 class="card-img-top" alt="Modern Garden">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-bold">Modern & Contemporary</h5>
+              <p class="card-text text-muted">
+                Clean lines, architectural plants, and minimalist design elements create sophisticated outdoor spaces.
+              </p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check text-success me-2"></i>Geometric layouts</li>
+                <li><i class="fas fa-check text-success me-2"></i>Architectural plants</li>
+                <li><i class="fas fa-check text-success me-2"></i>Contemporary materials</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="garden-style-card card h-100 border-0 shadow">
+            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                 class="card-img-top" alt="Traditional Garden">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-bold">Traditional & Cottage</h5>
+              <p class="card-text text-muted">
+                Charming, romantic gardens with abundant flowers, curved pathways, and classic design elements.
+              </p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check text-success me-2"></i>Perennial borders</li>
+                <li><i class="fas fa-check text-success me-2"></i>Natural materials</li>
+                <li><i class="fas fa-check text-success me-2"></i>Seasonal interest</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="garden-style-card card h-100 border-0 shadow">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                 class="card-img-top" alt="Native Garden">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-bold">Native & Sustainable</h5>
+              <p class="card-text text-muted">
+                Eco-friendly gardens featuring native plants that support local wildlife and require minimal water.
+              </p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check text-success me-2"></i>Native plant species</li>
+                <li><i class="fas fa-check text-success me-2"></i>Wildlife habitat</li>
+                <li><i class="fas fa-check text-success me-2"></i>Water conservation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="garden-style-card card h-100 border-0 shadow">
+            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                 class="card-img-top" alt="Vegetable Garden">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-bold">Edible Gardens</h5>
+              <p class="card-text text-muted">
+                Beautiful and productive gardens combining vegetables, herbs, and fruits in attractive designs.
+              </p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check text-success me-2"></i>Raised bed systems</li>
+                <li><i class="fas fa-check text-success me-2"></i>Companion planting</li>
+                <li><i class="fas fa-check text-success me-2"></i>Season extension</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="garden-style-card card h-100 border-0 shadow">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                 class="card-img-top" alt="Zen Garden">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-bold">Zen & Meditation</h5>
+              <p class="card-text text-muted">
+                Peaceful, contemplative spaces designed for relaxation and mindfulness with simple, elegant elements.
+              </p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check text-success me-2"></i>Water features</li>
+                <li><i class="fas fa-check text-success me-2"></i>Natural stones</li>
+                <li><i class="fas fa-check text-success me-2"></i>Quiet seating areas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="garden-style-card card h-100 border-0 shadow">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                 class="card-img-top" alt="Tropical Garden">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-bold">Tropical & Exotic</h5>
+              <p class="card-text text-muted">
+                Lush, vibrant gardens with bold foliage, exotic plants, and tropical-inspired design elements.
+              </p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check text-success me-2"></i>Bold foliage plants</li>
+                <li><i class="fas fa-check text-success me-2"></i>Vibrant colors</li>
+                <li><i class="fas fa-check text-success me-2"></i>Exotic specimens</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Included -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-dark mb-3">What's Included</h2>
+        <p class="lead text-muted">Comprehensive design and installation services</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="service-detail-card card h-100 border-0 shadow">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <div class="service-icon-sm bg-success text-white rounded-circle me-3">
+                  <i class="fas fa-drafting-compass"></i>
+                </div>
+                <h5 class="card-title mb-0">Design & Planning</h5>
+              </div>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check text-success me-2"></i>Site analysis and soil testing</li>
+                <li><i class="fas fa-check text-success me-2"></i>Custom design drawings</li>
+                <li><i class="fas fa-check text-success me-2"></i>Plant selection and sourcing</li>
+                <li><i class="fas fa-check text-success me-2"></i>Material specifications</li>
+                <li><i class="fas fa-check text-success me-2"></i>Project timeline and budget</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="service-detail-card card h-100 border-0 shadow">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <div class="service-icon-sm bg-success text-white rounded-circle me-3">
+                  <i class="fas fa-tools"></i>
+                </div>
+                <h5 class="card-title mb-0">Installation & Setup</h5>
+              </div>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check text-success me-2"></i>Soil preparation and amendment</li>
+                <li><i class="fas fa-check text-success me-2"></i>Professional plant installation</li>
+                <li><i class="fas fa-check text-success me-2"></i>Hardscape elements</li>
+                <li><i class="fas fa-check text-success me-2"></i>Irrigation system setup</li>
+                <li><i class="fas fa-check text-success me-2"></i>Mulching and finishing touches</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5 bg-success text-white">
+    <div class="container text-center">
+      <h2 class="display-5 fw-bold mb-3">Ready to Create Your Dream Garden?</h2>
+      <p class="lead mb-4">Let's design a beautiful outdoor space that reflects your unique style and vision</p>
+      <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+        <a href="contact.html" class="btn btn-light btn-lg text-success">
+          <i class="fas fa-palette me-2"></i>Start Design Process
+        </a>
+        <a href="tel:5551234567" class="btn btn-outline-light btn-lg">
+          <i class="fas fa-phone me-2"></i>Call (555) 123-4567
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="d-flex align-items-center mb-3">
+            <i class="fas fa-leaf text-success me-2 fs-3"></i>
+            <span class="h4 mb-0">Vera Landscaping</span>
+          </div>
+          <p class="text-light mb-4">
+            Transform your outdoor space with our professional landscaping services. 
+            We bring nature's beauty to your doorstep with expert design and maintenance.
+          </p>
+          <div class="d-flex gap-3">
+            <i class="fab fa-facebook text-success fs-4"></i>
+            <i class="fab fa-instagram text-success fs-4"></i>
+            <i class="fab fa-twitter text-success fs-4"></i>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+            <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+            <li><a href="portfolio.html" class="text-light text-decoration-none">Portfolio</a></li>
+            <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3">Contact Info</h5>
+          <div class="d-flex align-items-center mb-2">
+            <i class="fas fa-phone text-success me-2"></i>
+            <span class="text-light">(555) 123-4567</span>
+          </div>
+          <div class="d-flex align-items-center mb-2">
+            <i class="fas fa-envelope text-success me-2"></i>
+            <span class="text-light">info@veralandscaping.com</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-map-marker-alt text-success me-2"></i>
+            <span class="text-light">123 Garden St, Green Valley, CA</span>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="my-4">
+      <div class="text-center">
+        <p class="text-light mb-0">© 2024 Vera Landscaping. All rights reserved. | Designed with nature in mind.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
