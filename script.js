@@ -560,5 +560,13 @@ function preloadImages() {
 // Initialize image preloading
 preloadImages();
 
+function updateYearTime(){
+  const yearSpan = document.getElementById('currentYear');
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent += currentYear;
+  
+}
+updateYearTime();
+
 // Export functions for global access
 window.showAllServices = showAllServices;
